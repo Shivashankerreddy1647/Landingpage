@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electric Vehcles</title>
+    <link rel="stylesheet" href="loginstyle.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="innerbox" id="card">
+
+          <div class="card-front">
+            <h2>LOGIN</h2>
+            <form>
+              <input type="email" class="input-box" placeholder="Your Email Id" required>
+              <input type="password" class="input-box" placeholder="password" required>
+
+              <button type="button" class="submit-btn"onclick="window.location.href='index.html'">Log In</button>
+              <input type="checkbox"><span> Remember Me</span><br>
+              <a href="">Forgot password?</a>
+            </form>
+            <button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+
+          </div>
+          <div class="card-back">
+            <h2>Register</h2>
+            <form>
+              <input type="text" class="input-box" placeholder="Enter your Name" required>
+              <input type="date" class="input-box" style="color: #ffff00;" "font-style:italic">
+              <input type="number" class="input-box" placeholder="Mobile no.">
+              <input type="email" class="input-box" placeholder="Your Email Id" required>
+              <input type="password" class="input-box" placeholder="password" required>
+
+              <button type="button" class="submit-btn" onclick="window.location.href='index.html'">Sign Up</button>
+
+            </form>
+            <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+<script>
+
+var card = document.getElementById("card");
+
+function openRegister(){
+  card.style.transform = "rotateY(-180deg)"
+}
+function openLogin(){
+  card.style.transform = "rotateY(0deg)"
+}
+
+</script>
+
+  </body>
+</html>
